@@ -1,6 +1,3 @@
-({plugins: ['jsdom-quokka-plugin']})
-
-
 const inputColour = document.getElementById("input");
 const dropdown = document.getElementById("dropdown");
 
