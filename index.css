@@ -6,9 +6,11 @@ html,
 body {
     margin: 0;
     padding: 0;
+    background-color: #e6e8eb;
 }
 
 .container {
+    background-color: white;
     max-width: 550px;
     max-height: 550px;
     margin: auto;
@@ -89,4 +91,5 @@ button{
     font-family: "Inter", sans-serif;
     font-weight: 500;
     border: 1px solid #D1D5DB;
+    background-color: white;
 }
