@@ -10,8 +10,10 @@ document.getElementById("btn").addEventListener("click", function() {
         .then(data => {
             data.colors.forEach((color, i, array) => {
                 document.getElementsByClassName(`color${i + 1}`)[0].style.background = color.hex.value;
-                document.getElementsByClassName(`text${i + 1}`)[0].style.content = color.hex.value;
+                document.getElementsByClassName(`text${i + 1}`)[0].textContent = color.hex.value
                 console.log(array)
             });
         });
 });
+
+

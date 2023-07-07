@@ -81,7 +81,7 @@ button{
     background: #ff00ff;
 }
 
-.style{
+.styles{
     font-size: 12px;
     display: flex;
     justify-content: center;
@@ -89,25 +89,4 @@ button{
     font-family: "Inter", sans-serif;
     font-weight: 500;
     border: 1px solid #D1D5DB;
-}
-
-.text1::before {
-    content: "Word1";
-}
-
-
-.text2::before {
-    content: "Word2";
-}
-
-.text3::before {
-    content: "Word3";
-}
-
-.text4::before {
-    content: "Word4";
-}
-
-.text5::before {
-    content: "Word5";
 }
