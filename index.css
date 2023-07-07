@@ -1,0 +1,113 @@
+*, *::before, *::after {
+    box-sizing: border-box;    
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 550px;
+    max-height: 550px;
+    margin: auto;
+    display: grid;
+    border: 1px solid #D1D5DB;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 90px 550px 46px;
+    grid-template-areas:
+        "header header header header header"
+        "color1 color2 color3 color4 color5"
+        "text1 text2 text3 text4 text5";
+}
+
+.header {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFDFE;
+    width: 550px;
+    height: 90px;
+}
+
+input{
+    margin-left: 15px;
+    width: 61px;
+    height: 42px;
+    border: 1px solid #D1D5DB;
+}
+
+select{
+    width: 312px;
+    height: 42px;
+    padding: 9px 16px 9px 13px;
+    border-radius: 6px;
+    border: 1px solid #D1D5DB;
+    box-shadow: 0 1 5px black;
+}
+
+button{
+    width: 123px;
+    height: 42px;
+    margin-right: 15px;
+    color: #374151;
+    font-size: 12px;
+    background: white;
+    font-weight: 500;
+    border: 1px solid #D1D5DB;
+    box-shadow: 2 0 5px black;
+    border-radius: 4px;
+}
+
+.color1 {
+    background: #ff0000;
+}
+
+.color2 {
+    background: #00ff00;
+}
+
+.color3 {
+    background: #0000ff;
+}
+
+.color4 {
+    background: #ffff00;
+}
+
+.color5 {
+    background: #ff00ff;
+}
+
+.style{
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    border: 1px solid #D1D5DB;
+}
+
+.text1::before {
+    content: "Word1";
+}
+
+
+.text2::before {
+    content: "Word2";
+}
+
+.text3::before {
+    content: "Word3";
+}
+
+.text4::before {
+    content: "Word4";
+}
+
+.text5::before {
+    content: "Word5";
+}
